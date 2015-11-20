@@ -7,15 +7,19 @@ A novelty [Elixir Plug](https://github.com/elixir-lang/plug) to remove the word 
 
 Add to your list of dependencies in `mix.exs`:
 
-    def deps do
-      [
-        {:shameless_plug, "> 0.0.0"},
-      ]
-    end
+``` elixir
+def deps do
+  [
+    {:shameless_plug, "> 0.0.0"},
+  ]
+end
+```
 
 Then just
 
-    plug ShamelessPlug
+``` elixir
+plug ShamelessPlug
+```
 
 like any other plug. You probably want it late in the pipeline (after assigning a body), but before actually sending the response.
 
